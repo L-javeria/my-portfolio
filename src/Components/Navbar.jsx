@@ -13,10 +13,10 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed w-full h-[75px] shadow-2xl border-b-2 border-[#565757] text-white flex justify-between items-end px-4 bg-[#565857] ">
+    <div className="fixed w-full h-[75px] shadow-2xl border-b-2 border-[#565757] text-white flex justify-between items-end px-4 bg-[#565857] z-10">
       <div className="w-[60px] py-[8px] mx-4 ">
         <img
-          className="rounded-full border-2 border-solid hover:border-dashed hover:border-4 border-red-500"
+          className="rounded-full border-2 border-solid hover:border-dashed hover:border-4 border-[#ef634c] grayscale"
           src={logo2}
           alt="logo"
         />
@@ -61,7 +61,7 @@ const Navbar = () => {
               LinkedIn <FaLinkedin size={27} />
             </a>
           </li>
-          <li className="w-[160px] h-[60px] m-0 p-4 rounded-sm flex justify-center ml-[-100px] bg-[#333333] hover:ml-[-10px] duration-500 ">
+          <li className="w-[160px] h-[60px] m-0 p-4 rounded-sm flex justify-center ml-[-100px] bg-[#353b3c] hover:ml-[-10px] duration-500 ">
             <a
               className="flex justify-between items-center w-full text-white "
               href="/"

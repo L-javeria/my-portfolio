@@ -15,16 +15,16 @@ import canva from "../Assets/canva.png";
 
 const Skills = () => {
   return (
-    <div name="skills" className="w-full h-screen bg-red-400">
+    <div name="skills" className="w-full h-screen bg-[#323232] text-[#edcf83]">
       <div className="flex flex-col mx-auto w-full h-full max-w-[1000px] p-4">
           <div className=" mb-[40px] ">
-            <h1 className="font-bold text-4xl inline border-b-4 border-rose-700"> Experience </h1>
+            <h1 className="font-bold text-4xl inline border-b-4 border-[#faa916] text-[#d5a970] "> Experience </h1>
             <p className="py-4 text-lg ">
               {" "}
               These are the technologies I have worked with{" "}
             </p>
           </div>
-          <div className=" grid sm:grid-cols-4 gap-4 grid-cols-2 w-full">
+          <div className=" grid sm:grid-cols-4 gap-4 grid-cols-2 w-full text-[#b1a7a6]">
           <div className=" rounded-md hover:shadow-2xl shadow-xl hover:scale-110 duration-500">
               <div className="flex flex-col justify-center items-center">
                 <img className="py-2 w-20 mx-auto " src={aws} alt="html-logo" />
