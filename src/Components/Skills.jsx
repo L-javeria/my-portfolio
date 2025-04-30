@@ -18,7 +18,7 @@ const Skills = () => {
     <div name="skills" className="w-full h-screen bg-[#323232] text-[#edcf83]">
       <div className="flex flex-col mx-auto w-full h-full max-w-[1000px] p-4">
           <div className=" mb-[40px] ">
-            <h1 className="font-bold text-4xl inline border-b-4 border-[#faa916] text-[#d5a970] "> Experience </h1>
+            <h1 className="font-bold text-4xl inline border-b-4 border-[#faa916] text-[#d5a970] ">Skill Sets </h1>
             <p className="py-4 text-lg ">
               {" "}
               These are the technologies I have worked with{" "}

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo2 from "../Assets/logo2.jpg";
+import logo2 from "../Assets/removal.ai-javeria-lodhi.png";
 import { FaBars, FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
 import { HiOutlineMail } from "react-icons/hi";
@@ -13,20 +13,20 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed w-full h-[75px] shadow-2xl border-b-2 border-[#565757] text-white flex justify-between items-end px-4 bg-[#565857] z-10">
-      <div className="w-[60px] py-[8px] mx-4 ">
+    <div className="fixed w-full h-[75px] s text-white flex justify-between items-end px-14 z-10 backdrop-blur-md ">
+      <div className="w-[100px] flex justify-center items-center h-full mx-4 ">
         <img
-          className="rounded-full border-2 border-solid hover:border-dashed hover:border-4 border-[#ef634c] grayscale"
+          className=""
           src={logo2}
           alt="logo"
         />
       </div>
       <ul className="hidden md:flex h-full text-lg uppercase pt-2 font-[Rokkitt] ">
-        <li>Home</li>
-        <li>About</li>
-        <li>Skills</li>
-        <li>Work</li>
-        <li>Contact</li>
+        <li className="hover-underline-animation px-6">Home</li>
+        <li className="hover-underline-animation px-6">Experience</li>
+        <li className="hover-underline-animation px-6">Skills</li>
+        <li className="hover-underline-animation px-6">Work</li>
+        <li className="hover-underline-animation px-6">Contact</li>
       </ul>
       <div className="md:hidden pb-6 cursor-pointer" onClick={handleIcons}>
         {!context ? <FaBars /> : <IoMdClose size={20} />}
@@ -51,7 +51,7 @@ const Navbar = () => {
         </ul>
       </ul>
 
-      <div className="hidden lg:flex flex-col top-[25%] fixed left-0 z-10 ">
+      {/* <div className="hidden lg:flex flex-col top-[400px] absolute left-0 z-10 ">
         <ul>
           <li className="w-[160px] h-[60px] m-0 p-4 flex ml-[-100px] justify-center rounded-sm hover:ml-[-10px] bg-blue-600 duration-500 ">
             <a
@@ -86,7 +86,7 @@ const Navbar = () => {
             </a>
           </li>
         </ul>
-      </div>
+      </div> */}
     </div>
   );
 };

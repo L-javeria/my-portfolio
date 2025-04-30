@@ -3,3 +3,27 @@
     margin: 0;
     padding: 0;
 }
+
+.hover-underline-animation {
+    position: relative;
+    padding-bottom: 5px; /* Adjust padding to ensure there's space for the underline */
+  }
+  
+  .hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
